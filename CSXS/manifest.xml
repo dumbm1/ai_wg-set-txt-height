@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="4.0"
+                   ExtensionBundleId="com.ai_set_text_height"
+                   ExtensionBundleVersion="0.0.1"
+                   ExtensionBundleName="ai_ark_calc"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Author>
+        <![CDATA[Marat Shagiev]]>
+    </Author>
+    <Contact mailto="m_js@bk.ru">
+        <![CDATA[m_js@bk.ru]]>
+    </Contact>
+    <Legal>
+        <![CDATA[Legal stuff...]]>
+    </Legal>
+    <Abstract href="https://github.com/dumbm1/ai_set_text_height">
+        <![CDATA[FlexoPrint layout to output]]>
+    </Abstract>
+
+    <ExtensionList>
+        <Extension Id="com.ai_set_text_height" Version="0.0.1"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="ILST" Version="17.0"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="4.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.ai_set_text_height">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./jsx/hostscript.jsx</ScriptPath>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>ai_set_text_height 0.0.1</Menu>
+                    <Geometry>
+                        <Size>
+                            <Width>200</Width>
+                            <Height>300</Height>
+                        </Size>
+                        <!--<MinSize>
+                            <Width>190</Width>
+                            <Height>300</Height>
+                        </MinSize>
+                        <MaxSize>
+                            <Width>720</Width>
+                            <Height>1024</Height>
+                        </MaxSize>-->
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./icons/set_text_height-01.png</Icon>
+                        <Icon Type="RollOver">./icons/set_text_height-01.png</Icon>
+                        <Icon Type="Disabled">./icons/set_text_height-01.png</Icon>
+                        <Icon Type="DarkNormal">./icons/set_text_height-01.png</Icon>
+                        <Icon Type="DarkRollOver">./icons/set_text_height-01.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>

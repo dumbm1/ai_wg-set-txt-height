@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>ai_set_text_height</title>
+  <style type="text/css">
+    body {
+      overflow : hidden;
+      }
+
+    #wg-set-txt-height {
+      box-sizing  : border-box;
+      font-size   : 0.8em;
+      background  : whitesmoke;
+      font-family : Arial, Helvetica, sans-serif;
+      }
+
+    #wg-set-txt-height div {
+      margin-bottom : 10px;
+      }
+
+    #wg-set-txt-height div div {
+      /*background : lightgrey;*/
+      }
+
+    #wg-set-txt-height h2 {
+      font-size  : 1em;
+      margin     : 0 0 0.3em 0;
+      cursor     : pointer;
+      background : lightgrey;
+      }
+
+    /*#wg-set-txt-height h2, */
+    #wg-set-txt-height label, #wg-set-txt-height span, #wg-set-txt-height input {
+      padding : 0 2px 0 2px;
+      }
+
+    #wg-set-txt-height .wg-set-txt-height__output label {
+      display       : block;
+      border-bottom : dotted 1px;
+      }
+
+    #wg-set-txt-height .wg-set-txt-height__output label span {
+      float : right;
+      }
+
+    #wg-set-txt-height .wg-set-txt-height__input {
+      }
+
+    #wg-set-txt-height .wg-set-txt-height__input label {
+      display : block;
+      }
+
+    #wg-set-txt-height .wg-set-txt-height__input input {
+      width      : 100%;
+      box-sizing : border-box;
+      }
+
+    #wg-set-txt-height .wg-set-txt-height__button {
+      margin      : 5px;
+      margin-left : auto;
+      display     : block;
+      }
+
+    #wg-set-txt-height .wg-set-txt-height__status-bar {
+      /*position   : relative;*/
+      top        : 250px;
+      right      : 5px;
+      left       : 5px; !important;
+      font-size  : 0.9em;
+      color      : RGBa(0, 0, 0, 0.7);
+      border-top : dotted 1px;
+      }
+
+  </style>
+
+</head>
+<body>
+
+<div id="wg-set-txt-height" data="Widget set text height">
+
+  <div class="wg-set-txt-height__output">
+    <h2><span>Measure symbols height</span></h2>
+    <label>Capital: <!--<span></span>--></label>
+    <label>Small: <!--<span></span>--></label>
+    <button class="wg-set-txt-height__button">Measure</button>
+  </div>
+
+  <div class="wg-set-txt-height__input">
+    <h2><span>Change symbols height</span></h2>
+    <div><label for="template_string" title="Input template symbol">Template symbol:</label>
+      <input type="text" value="wwwww">
+      <label title="Input desired height of symbol">Set text height:</label>
+      <input type="number" min="0" step="0.1" value="2">
+      <button class="wg-set-txt-height__button">Change</button>
+    </div>
+  </div>
+
+  <div class="wg-set-txt-height__service">
+    <button class="wg-set-txt-height__button" id="reload_button">Reload panel</button>
+  </div>
+
+  <div class="wg-set-txt-height__status-bar">Status bar</div>
+</div>
+
+<script src="js/lib/CSInterface.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
