@@ -27,42 +27,7 @@
       if (targ.closest('.wg-set-txt-height__output')) {
         // statusBar.innerHTML = targ;
         if (targ.tagName.toLowerCase() === 'button') {
-          csInterface.evalScript('getMinFontHeight()', /*function (result) {
-
-
-           let outputDiv = document.querySelector('.wg-set-txt-height__output');
-           let labelCaps = outputDiv.getElementsByTagName('label')[0];
-           let labelSmall = outputDiv.getElementsByTagName('label')[1];
-
-           try {
-           let resArr = JSON.parse(result);
-           let spanCaps = document.createElement('span');
-           let spanSmall = document.createElement('span');
-           spanCaps.innerHTML = resArr[0];
-           spanSmall.innerHTML = resArr[1];
-
-           if (labelCaps.getElementsByTagName('span')[0]) {
-           labelCaps.replaceChild(spanCaps, labelCaps.getElementsByTagName('span')[0]);
-           } else {
-           labelCaps.append(spanCaps);
-           }
-           if (labelSmall.getElementsByTagName('span')[0]) {
-           labelSmall.replaceChild(spanSmall, labelSmall.getElementsByTagName('span')[0]);
-           } else {
-           labelSmall.append(spanSmall);
-           }
-           statusBar.innerHTML = 'Idle';
-           } catch (e) {
-           statusBar.innerHTML = result;
-           if (labelCaps.getElementsByTagName('span')[0]) {
-           labelCaps.removeChild(labelCaps.getElementsByTagName('span')[0]);
-           }
-           if (labelSmall.getElementsByTagName('span')[0]) {
-           labelSmall.removeChild(labelSmall.getElementsByTagName('span')[0]);
-           }
-           }
-
-           }*/ _outputDivProcess);
+          csInterface.evalScript('getMinFontHeight()', _outputDivProcess);
 
         }
       } else if (targ.closest('.wg-set-txt-height__input')) {
@@ -119,8 +84,4 @@
 
   }
 
-  /*function loadJSX(fileName) {
-   var extensionRoot = csInterface.getSystemPath(SystemPath.EXTENSION) + '/jsx/';
-   csInterface.evalScript('$.evalFile("' + extensionRoot + fileName + '")');
-   }*/
 }());

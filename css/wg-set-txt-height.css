@@ -1,0 +1,62 @@
+body {
+ overflow : hidden;
+ }
+
+#wg-set-txt-height {
+ box-sizing  : border-box;
+ font-size   : 0.8em;
+ background  : whitesmoke;
+ font-family : Arial, Helvetica, sans-serif;
+ }
+
+#wg-set-txt-height div {
+ margin-bottom : 10px;
+ }
+
+#wg-set-txt-height h2 {
+ font-size  : 1em;
+ margin     : 0 0 0.3em 0;
+ cursor     : pointer;
+ background : lightgrey;
+ }
+
+#wg-set-txt-height label, #wg-set-txt-height span, #wg-set-txt-height input {
+ padding : 0 2px 0 2px;
+ }
+
+#wg-set-txt-height .wg-set-txt-height__output label {
+ display       : block;
+ border-bottom : dotted 1px;
+ }
+
+#wg-set-txt-height .wg-set-txt-height__output label span {
+ float : right;
+ }
+
+#wg-set-txt-height .wg-set-txt-height__input {
+ }
+
+#wg-set-txt-height .wg-set-txt-height__input label {
+ display : block;
+ }
+
+#wg-set-txt-height .wg-set-txt-height__input input {
+ width      : 100%;
+ box-sizing : border-box;
+ }
+
+#wg-set-txt-height .wg-set-txt-height__button {
+ margin      : 5px;
+ margin-left : auto;
+ display     : block;
+ }
+
+#wg-set-txt-height .wg-set-txt-height__status-bar {
+ top        : 250px;
+ right      : 5px;
+ left       : 5px; !important;
+ font-size  : 0.9em;
+ color      : RGBa(0, 0, 0, 0.7);
+ border-top : dotted 1px;
+ }
+
