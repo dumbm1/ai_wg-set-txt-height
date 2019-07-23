@@ -59,11 +59,11 @@
                         </MaxSize>-->
                     </Geometry>
                     <Icons>
-                        <Icon Type="Normal">./icons/set_text_height-01.png</Icon>
-                        <Icon Type="RollOver">./icons/set_text_height-01.png</Icon>
-                        <Icon Type="Disabled">./icons/set_text_height-01.png</Icon>
-                        <Icon Type="DarkNormal">./icons/set_text_height-01.png</Icon>
-                        <Icon Type="DarkRollOver">./icons/set_text_height-01.png</Icon>
+                        <Icon Type="Normal">./icons/iconLightThemeNormal.png</Icon>
+                        <Icon Type="RollOver">./icons/iconLightThemeHover.png</Icon>
+                        <Icon Type="Disabled">./icons/iconDisabled.png</Icon>
+                        <Icon Type="DarkNormal">./icons/iconDarkThemeNormal.png</Icon>
+                        <Icon Type="DarkRollOver">./icons/iconDarkThemeHover.png</Icon>
                     </Icons>
                 </UI>
             </DispatchInfo>
