@@ -19,6 +19,7 @@
     let wg_setTxtHeight = document.getElementById('wg-set-txt-height');
 
     wg_setTxtHeight.addEventListener('click', wg_setTxtHeight_eventHandler);
+    wg_setTxtHeight.addEventListener('keyup', wg_setTxtHeight_eventHandler);
 
     function wg_setTxtHeight_eventHandler(e) {
       let targ = e.target;
@@ -32,13 +33,28 @@
         }
       } else if (targ.closest('.wg-set-txt-height__input')) {
         let inputDiv = document.querySelector('.wg-set-txt-height__input');
-        if (targ.tagName.toLowerCase() === 'button') {
+        switch (e.type) {
+          case "click":
+            if (targ.tagName.toLowerCase() === 'button') _setMinFontHeight();
+            break;
+          case "keyup":
+            if (targ === inputDiv.querySelector('input[type=number]')) {
+              if (e.keyCode === 13) _setMinFontHeight();
+            }
+            break;
+          default:
+            break;
+        }
+
+        function _setMinFontHeight() {
           let templateString = inputDiv.querySelector('input[type=text]').value;
           let symbolInputHeight = inputDiv.querySelector('input[type=number]').value;
 
           csInterface.evalScript(
-            'setMinFontHeight(' + JSON.stringify([templateString, symbolInputHeight]) + ')', _outputDivProcess);
+            'setMinFontHeight(' + JSON.stringify([templateString, symbolInputHeight]) + ')', _outputDivProcess
+          );
         }
+
       } else if (targ.closest('.wg-set-txt-height__service')) {
         statusBar.innerHTML = targ;
         if (targ.id === 'reload_button') location.reload();
@@ -79,6 +95,7 @@
           }
         }
       }
+
       return false;
     }
 

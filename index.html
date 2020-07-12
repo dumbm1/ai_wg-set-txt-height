@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/wg-set-txt-height.css">
-  <title>Widget set text height</title>
-  <style type="text/css">
-  </style>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+ <link rel="stylesheet" href="css/wg-set-txt-height.css">
+ <title>Widget set text height</title>
+ <style type="text/css">
+ </style>
 
 </head>
 <body>
 
 <div id="wg-set-txt-height" data="Widget set text height">
 
-  <div class="wg-set-txt-height__output">
-    <h2><span>Measure symbols height</span></h2>
-    <label>Capital: <!--<span></span>--></label>
-    <label>Small: <!--<span></span>--></label>
-    <button class="wg-set-txt-height__button">Measure</button>
-  </div>
+ <div class="wg-set-txt-height__output">
+  <h2><span>Measure symbols height</span></h2>
+  <label>Capital: <!--<span></span>--></label>
+  <label>Small: <!--<span></span>--></label>
+  <button class="wg-set-txt-height__button">Measure</button>
+ </div>
 
-  <div class="wg-set-txt-height__input">
-    <h2><span>Change symbols height</span></h2>
-    <div><label for="template_string" title="Input template symbol">Template symbol:</label>
-      <input type="text" value="wwwww">
-      <label title="Input desired height of symbol">Set text height:</label>
-      <input type="number" min="0" step="0.1" value="2">
-      <button class="wg-set-txt-height__button">Change</button>
-    </div>
+ <div class="wg-set-txt-height__input">
+  <h2><span>Change symbols height</span></h2>
+  <div><label for="template_string" title="Input template symbol">Template symbol:</label>
+   <input type="text" value="wwwww">
+   <label title="Input desired height of symbol">Set text height:</label>
+   <input type="number" min="0" step="0.1" value="2">
+   <button class="wg-set-txt-height__button">Change</button>
   </div>
+ </div>
 
-  <div class="wg-set-txt-height__service">
-    <button class="wg-set-txt-height__button" id="reload_button">Reload panel</button>
-  </div>
+ <div class="wg-set-txt-height__service">
+  <button class="wg-set-txt-height__button" id="reload_button">Reload panel</button>
+ </div>
 
-  <div class="wg-set-txt-height__status-bar">Status bar</div>
+ <div class="wg-set-txt-height__status-bar">Status bar</div>
 </div>
 
 <script src="js/lib/CSInterface.js"></script>
